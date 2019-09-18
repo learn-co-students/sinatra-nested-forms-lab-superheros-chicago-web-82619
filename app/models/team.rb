@@ -1,7 +1,9 @@
 class Team
 
-    def initialize(name, motto)
-        @name = name
-        @motto = motto
+    attr_accessor :name, :motto
+
+    def initialize(team_hash)
+        @name = team_hash["name"]
+        @motto = team_hash["motto"]
     end
 end
